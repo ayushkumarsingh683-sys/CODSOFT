@@ -95,7 +95,7 @@ for name, metrics in results.items():
 print("=========================================================================")
 import matplotlib.pyplot as plt
 
-# चार्ट के लिए डेटा तैयार करना
+
 algorithms = ['Logistic Regression', 'Decision Tree', 'Random Forest']
 recall_scores = [0.7437, 0.8342, 0.8191]
 precision_scores = [0.0604, 0.0849, 0.1088]
@@ -115,7 +115,7 @@ ax.legend()
 ax.grid(axis='y', linestyle='--', alpha=0.7)
 
 plt.tight_layout()
-# चार्ट को इमेज के रूप में सेव करना
+
 plt.savefig('model_comparison_chart.png')
 print("\n[SUCCESS] Explanation chart saved as 'model_comparison_chart.png'!")
 plt.show()
